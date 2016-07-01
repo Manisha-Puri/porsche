@@ -65,6 +65,9 @@ body{
 .row2{
   margin-top: 30px;
 }
+.btn-success{
+  margin-top: 10px;
+}
 
 }
 ul.unstyled{
@@ -110,6 +113,14 @@ h6{
 .navbar{
   background:#333;
   color:#eee;
+  min-height: 66px;
+  border:none;
+}
+.navbar-inverse{
+  background:#333;
+  color:#eee;
+  min-height: 66px;
+  border:none;
 }
 .item{
   margin-top: 10px;
@@ -122,6 +133,7 @@ a.list-group-item .list-group-item-text{
 }
 .list-group-item {
   border:none;
+  background-color: black;
 }
 .nav li a:hover{
   color:currentColor;
@@ -138,8 +150,10 @@ a.list-group-item .list-group-item-text{
   font-size:24px;
 }
 .carousel-caption h4{
+  margin: auto;
   font-size:32px;
 }
+
 
 #myCarousel .item{
   height:400px;
@@ -154,6 +168,9 @@ a.list-group-item .list-group-item-text{
   background:url('../../images/m3.jpg') top center no-repeat;
 }
 
+hr{
+  border-top: 1px dotted;
+}
 
 /* --------------------------------------
    Global Styles
@@ -217,6 +234,9 @@ a.list-group-item .list-group-item-text{
   padding-right: 0px;
 
 }
+.col-sm-7 h5{
+  padding-left: 10px;
+}
 .form-control{
   background: #ccc;
 }
@@ -232,15 +252,7 @@ a.list-group-item .list-group-item-text{
    -------------------------------------- */
 
 /* Portrait & landscape phone */
-@media (max-width: 480px) {
-  .thumbnail .price{
-    font-size: 14px;
-  }
-  .thumbnail .price sup{
-    font-size: 10px;
-  }
 
-}
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
@@ -262,6 +274,26 @@ a.list-group-item .list-group-item-text{
   .carousel-caption h4{
     font-size:22px;
   }
+}
+@media (max-width: 480px) {
+  #slide1{
+    background:url('../../images/xs1.jpg') top center no-repeat;
+  }
+  #slide2{
+    background:url('../../images/xs2.jpg') top center no-repeat;
+  }
+  #slide3{
+    background:url('../../images/xs3.jpg') top center no-repeat;
+  }
+  .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+.item p{
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
 }
 
 

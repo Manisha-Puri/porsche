@@ -11,7 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<!-- Bootstrap CSS -->
-		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="bootstrap-customize/css/bootstrap.min.css" rel="stylesheet">
 		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
 
 
@@ -25,19 +25,21 @@
 	</head>
 	<body>
 
-	<div class="container" id="main"><!--container of the body starts-->
+	<div class="container-fluid" id="main"><!--container of the body starts-->
 
-		<div class="navbar navbar-fixed-top"><!--navbar starts-->
+		<div class="navbar-inverse navbar-default navbar-fixed-top"><!--navbar starts-->
 			<div class="container">
 				<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="/"><img src="images/porsche.jpg" alt="your logo"></a>
-					<div class="nav-collapse collapse navbar-responsive-collapse">
+				<div class="navbar-brand">
+				<a href="/"><img src="images/porsche.jpg" alt="your logo"></a>
+			  </div>
+					<div class="navbar-collapse collapse navbar-responsive-collapse">
 						<ul class="nav navbar-nav">
-							<li><a href="#"><span class="glyphicon glyphicon-list"></span> 718 Boxster-S</a></li>
+							<li><a href="#"> 718 Boxster-S</a></li>
 						  	<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span> Technical Specs<strong class="caret"></strong></a>
 								  <ul class="dropdown-menu">
 								   	<li>
@@ -60,14 +62,15 @@
 							  	</ul><!--end dropdown menu-->
 						  	</li>
 						</ul>
-					<form class="navbar-form pull-left">
+					<form class="navbar-form navbar-left">
 						<div class="form-group icon">
 							<input type="text" class="form-control" placeholder="search your model.." id="searchInput">
 						</div>
 						<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
 			     </form>
-				   	<ul class="nav navbar-nav pull-right">
-					  	<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>Tools and Services<strong class="caret"></strong></a>
+
+					<ul class="nav navbar-nav navbar-right">
+					  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>Tools and Services<strong class="caret"></strong></a>
                <ul class="dropdown-menu">
 					  		<li>
 					  		<a href="#"><span class="glyphicon glyphicon-wrench"></span> Car Configurator</a>
@@ -78,10 +81,6 @@
 					  		<li>
 					  		<a href="#"><span class="glyphicon glyphicon-briefcase"></span> Pre-owned Car Locator</a>
 					  		</li>
-				  	 		<li class="divider"></li>
-				   			<li>
-					  		<a href="#"><span class="glyphicon glyphicon-off"></span> sign out</a>
-				 	  		</li>
 					  	</ul><!--dropdown menu ends-->
 				  	</li><!--dropdown list ends-->
 				   </ul><!-- navbar pullright ends-->
@@ -99,7 +98,6 @@
     <!--wrapper for slides-->
 			<div class="carousel-inner">
 				<div class="item active" id="slide1">
-
 					<div class="carousel-caption">
 						<h4>PORSCHE</h4>
 						<p>International Models</p>
@@ -107,19 +105,12 @@
 				</div><!--ending item-->
 
 				<div class="item" id="slide2">
-					<div class="carousel-caption">
-						<h4>DESIGN</h4>
-						<p>sharpened</p>
-					</div><!--carousel caption ending-->
 				</div><!--ending item-->
 
 				<div class="item" id="slide3">
-					<div class="carousel-caption">
-						<h4>SOUND</h4>
-						<p>typically porsche</p>
-					</div><!--carousel caption ending-->
 				</div><!--ending item-->
-			</div><!--ending carousel inner-->
+
+    	</div><!--ending carousel inner-->
 				<!--controls-->
 				<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
 				<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
@@ -186,10 +177,10 @@
 	   	<div class="tab-content">
 
 
-				<div class="tab-pane" id="tab1">
+				<div class="tab-pane active" id="tab1">
 					<div class="col-sm-5">
 				  	<h5>718 Cayman</h5>
-				  	<img src="images/car11.jpg" class="thumbnail pull-left">
+				  	<img src="images/car11.jpg" class="thumbnail pull-left img-responsive">
 			  	</div>
           <div class="col-sm-7">
 						<h5> Technical Specs</h5>
@@ -218,7 +209,7 @@
 			<div class="tab-pane" id="tab2">
 				<div class="col-sm-5">
 					<h5>911 Carrera</h5>
-					<img src="images/car22.jpg" class="thumbnail pull-left">
+					<img src="images/car22.jpg" class="thumbnail pull-left img-responsive">
 				</div>
 				<div class="col-sm-7">
 					<h5> Technical Specs</h5>
@@ -247,7 +238,7 @@
 		<div class="tab-pane" id="tab3">
 			<div class="col-sm-5">
 				<h5>911 Carrera Cabriolet</h5>
-				<img src="images/car33.jpg" class="thumbnail pull-left">
+				<img src="images/car33.jpg" class="thumbnail pull-left img-responsive">
 			</div>
 			<div class="col-sm-7">
 				<h5> Technical Specs</h5>
@@ -276,7 +267,7 @@
 	<div class="tab-pane" id="tab4">
 		<div class="col-sm-5">
 			<h5>Macan</h5>
-			<img src="images/car44.jpg" class="thumbnail pull-left">
+			<img src="images/car44.jpg" class="thumbnail pull-left img-responsive">
 		</div>
 		<div class="col-sm-7">
 			<h5> Technical Specs</h5>
@@ -316,32 +307,29 @@
 							<div class="modal-content">
 								<div class="modal-header">
 									<button class="close" data-dismiss="modal">&times;</button>
-									<h4 class="modal-title">A modal window</h4>
+									<h3 class="modal-title">Check availability</h3>
 								</div><!--modal header ends-->
 								<div class="modal-body">
-									<h4>Enter your details in this form</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-									<h4>Popovers in a modal</h4>
-									<a href="#" class="btn btn-danger pop" data-toggle="popover" data-placement="top" data-original-title="you clicked it" data-content="I knew you would.">Don't click this button</a>
-									<h4>Tooltips in a modal</h4>
-									<a href="#"  data-original-title="Tooltip" rel="tooltip">This link </a>should have tooltip like<a href="#"  data-original-title="wohoo" rel="tooltip"> this one</a>
+									<h3>Enter the details </h3>
+									<a href="#" class="btn btn-danger pop" data-toggle="popover" data-placement="top" data-original-title="you clicked it" data-content="I knew you would.">Home</a>
+
 									<hr>
-									<p><small class="text-muted">PS. This form doesn't do anything</small></p>
+									<p><small class="text-muted">Check for your model availability  nearby</small></p>
 									<form class="form-horizontal">
 										<div class="form-group">
-											<label class="col-lg-2 control-label" for="inputName">Name</label>
-											<div class="col-lg-10"><input class="form-control" id="inputName" placeholder="Name" type="text">
+											<label class="col-lg-2 control-label" for="inputModel">Model</label>
+											<div class="col-lg-10"><input class="form-control" id="inputModel" placeholder="Name" type="text">
 											</div>	<!--col-lg-10 ends-->
 										</div><!--form group ends-->
 										<div class="form-group">
-											<label class="col-lg-2 control-label" for="inputEmail">Email</label>
-											<div class="col-lg-10"><input class="form-control" id="inputEmail" placeholder="Email" type="email">
+											<label class="col-lg-2 control-label" for="inputCity">City</label>
+											<div class="col-lg-10"><input class="form-control" id="inputCity" placeholder="City" type="text">
 										  </div>	<!--col-lg-10 ends-->
 										</div><!--form group ends-->
 										<div class="form-group">
-											<label class="col-lg-2 control-label" for="inputMessage">Message</label>
-											<div class="col-lg-10"><textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
-												<button class="btn btn-success pull-right" type="submit"> Send!</Button>
+											<label class="col-lg-2 control-label" for="inputMessage">Country</label>
+										<div class="col-lg-10"><input class="form-control" id="inputCountry" placeholder="Country" type="text">
+												<button class="btn btn-success pull-right" type="submit">GO!</Button>
 												</div>	<!--col-lg-10 ends-->
 										</div><!--form group ends-->
 									</form><!--horizontal-form ends-->
@@ -349,7 +337,7 @@
 								</div><!--modal-body ends-->
 								<div class="modal-footer">
 									<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
-									<button class="btn btn-primary" type="button">Save Changes</button>
+
 								</div><!--modal footer ends here-->
 							</div><!--modal content ends-->
 						</div><!--modal dialog ends-->
@@ -361,57 +349,59 @@
 
 
 <div class="row" id="moreCourses">
-	<div class="col-12">
+	<div class="container">
+	<div class="col-sm-12">
 		<h2>Highlights</h2>
 
 		<div class="thumbnails row">
-			<div class="col-6">
+			<div class="col-sm-6">
 				<div class="thumbnail">
-					<img src="images/h1.jpg" alt="web hosting">
+					<img src="images/h1.jpg" alt="Connect plus" class="img-responsive">
 					<div class="caption">
 						<h3>Connect Plus:</h3>
-						<p><a href="" target="_blank" class="btn btn-small btn-primary">web Connected ></a><a href="" target="_blank" class="btn btn-small btn-link">Learn more</a></p>
+						<h3>web Connected</h3>
 					</div><!--ending caption-->
 				</div><!--ending thumbnail-->
 			</div><!--ending col-6-->
-			<div class="col-6">
+			<div class="col-sm-6">
 				<div class="thumbnail">
-					<img src="images/h2.jpg" alt="web hosting">
+					<img src="images/h2.jpg" alt="sport" class="img-responsive">
 						<div class="caption">
 						<h3>Sport:</h3>
-						<p><a href="" target="_blank" class="btn btn-small btn-primary">fit for the track ></a><a href="" target="_blank" class="btn btn-small btn-link">Learn more</a></p>
+						<h3>fit for the track</h3>
 					</div><!--ending caption-->
 				</div><!--ending thumbnail-->
 			</div><!--ending col-6-->
 		</div><!--ending row-->
 
 			<div class="thumbnails row">
-				<div class="col-6">
+				<div class="col-sm-6">
 					<div class="thumbnail">
-						<img src="images/h3.jpg" alt="web hosting">
+						<img src="images/h3.jpg" alt="power & efficiency" class="img-responsive">
 					   <div class="caption">
 							<h3>Power and Efficiency:</h3>
-							<p><a href="" target="_blank" class="btn btn-small btn-primary">increased ></a><a href="" target="_blank" class="btn btn-small btn-link">Learn more</a></p>
+				    	<h3>increased</h3>
 						</div><!--ending caption-->
 					 </div><!--ending thumbnail-->
 				  </div><!--ending col-6-->
-			  	<div class="col-6">
+			  	<div class="col-sm-6">
 						<div class="thumbnail">
-							<img src="images/h4.jpg" alt="web hosting">
+							<img src="images/h4.jpg" alt="safety" class="img-responsive">
 							<div class="caption">
 								<h3> Safety:</h3>
-								<p><a href="" target="_blank" class="btn btn-small btn-primary">reinforced ></a><a href="" target="_blank" class="btn btn-small btn-link">Learn more</a></p>
+								<h3>reinforced</h3>
 							</div><!--ending caption-->
 						</div><!--ending thumbnail-->
 					</div><!--ending col-6-->
       </div><!--ending row-->
 
 	</div><!--ending col-12-->
-</div><!--ending more courses-->
+	</div><!--ending more courses-->
+	</div>
 	</div><!--container ends-->
 
 	<div class="row" id="bigCallout">
-		<div class="col-12">
+		<div class="col-sm-12">
 			<div class="alert alert-success alert-block fade in" id="successAlert">
 				<button type="button" class="close" data-dismiss="alert">&times;</button>
 				<h4>Success</h4>
@@ -503,7 +493,7 @@
 	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
 
 	<!-- Bootstrap JS -->
-	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="bootstrap-customize/js/bootstrap.min.js"></script>
 
 	<!-- Custom JS -->
 	<script src="includes/js/script.js"></script>
